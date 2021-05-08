@@ -19,6 +19,10 @@ Requirements for the software and other tools to build, test and push
 ### Installing
 A step by step series of examples that tell you how to get a development
 environment running
+
+First Of All Download/clone thise project on your computer.
+Then we will Start the setup:
+
 First  , After Installing XAMPP  , Open it and Start both of :
 
   -Apache
@@ -26,6 +30,16 @@ First  , After Installing XAMPP  , Open it and Start both of :
   -MySQL
   
   ![image](https://user-images.githubusercontent.com/78027050/117541826-071c5b00-b016-11eb-837c-2d97af2d4ba5.png)
+  
+Then Click on Admin for MySQL column  , a Window will pop up and redirects you to the phpMyAdmin Page:
+Now We will Import our database to the mysql server:
+
+- Create a Database called : **3allamni_db**
+- Go To import and Import our .sql file located in : ./Database/db.sql
+- Click On Execute
+
+***Note : If There was an Import Error then make sure to execute each sql statement line by line on your database sql command***
+
 
 
 
