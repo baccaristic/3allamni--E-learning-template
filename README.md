@@ -13,7 +13,7 @@ Requirements for the software and other tools to build, test and push
 
 -[![XAMPP](https://cdn.icon-icons.com/icons2/1381/PNG/32/xampp_94513.png)][2]
 
--[Python 3.7](https://www.python.org/downloads/release/python-370/)
+-[![Python 3.7](https://icons.iconarchive.com/icons/papirus-team/papirus-apps/32/python-icon.png)][3]
 
 
 
@@ -23,3 +23,4 @@ Requirements for the software and other tools to build, test and push
 
 [1]: https://angular.io/
 [2]: http://apachefriends.org/
+[3]:https://www.python.org/downloads/release/python-370/
