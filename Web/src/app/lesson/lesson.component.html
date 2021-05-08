@@ -1,0 +1,29 @@
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-sm-12 col-xs-12 col-md-3 col-3" >
+        <div style="left:10px">
+          <app-worker  [id_worker] = "teacher_id"></app-worker>
+        </div>
+      </div>
+    <div class="col-sm-12 col-xs-12 col-md-9 col-9">
+      <div class="courses-container">
+        <div class="course">
+          <div class="course-preview">
+            <div class="card1" style="margin-right: 10px ;">
+              <div class="card__title">{{course.course_name}}</div>
+              <div class="progress-bar"></div>
+              <div class="circle"><img src = "{{course.course_img}}" style = "height: 90%; width: 100%; border-radius: 50%;"></div>
+            </div>
+            </div>
+            <div class="course-info">
+              <h6>{{course.course_name}}</h6>
+              <h2>Course Description</h2>
+              <p>{{course.course_desc}}</p>
+              <button class="btn" [routerLink]="['/course/pdf/view']"
+              [queryParams]="{id:course.course_id | json }" (click) = "ViewCourse()">>Open PDF</button>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>

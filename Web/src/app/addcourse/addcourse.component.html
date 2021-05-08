@@ -1,0 +1,77 @@
+<div class="container">
+    <h1 style="text-align: center;">My courses :</h1>
+    <br><br>
+    <div class="fix" style="text-align:center;">
+      <!--
+    <carousel [cellsToShow]="3" [cellsToScroll]="1" [height]="300" [cellWidth]="300" [margin]="0" [arrowsOutside]="true">
+      <div class="carousel-cell"*ngFor="let course of courses"  id="course.course_id" >
+    <button type="button" class="btn-close" aria-label="Close"  (click)="confirmation(course.course_id)" ></button>
+        <div class="card" id ="sup" style="width: 300px">
+          <img src="{{course.course_img}}" class="card-img-top" alt="..." style="width:50%; margin-left: auto;
+          margin-right: auto; ">
+          <div class="card-body" >
+            <h5 class="card-title">Course Title</h5>
+            <h6>{{course.course_name}}</h6>
+            <p class="card-text">{{course.course_desc}}</p>
+         
+          </div>
+      </div>
+    </div>
+    
+    
+</carousel>
+      -->
+      <ngb-carousel>
+        <ng-template ngbSlide *ngFor = "let course of courses">
+          <button type="button" class="btn-close" aria-label="Close" style="background-color: red;" (click)="confirmation(course.course_id)" ></button>
+          <div class="picsum-img-wrapper" style="padding-bottom: 50px;">
+            
+            <div class="card " >
+              <div data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine">
+  
+              
+              <div class="card__title">{{course.course_name}}</div>
+              <div class="progress-bar"></div>
+              <div class="circle"><img src = "{{course.course_img}}" style = "height: 100%; width: 100%; border-radius: 50%;"></div>
+           
+              
+            </div>
+          
+        </div>
+          </div>
+         
+        </ng-template>
+      </ngb-carousel>
+<br>
+    
+<form id="f">
+    <h2>Add Courses :</h2>
+    <input type="text" id="nom" class="fadeIn second" name="login" placeholder=" Choose a Name">
+    <input type="text" id="desc" class="fadeIn second" name="login" placeholder=" Description">
+    <select class="form-select" aria-label="Default select example" style="width: 50%;" id = "cat">
+      <option selected>select category</option>
+      <option  *ngFor="let cat of catlist" value="{{cat.cat_id}}">{{cat.nom_cat}}</option>
+    </select>
+   <div class="content">
+    <input type="file" id="image" hidden (change) = "onSelectFile($event)" >
+    <input type="file" id="pdf" hidden (change) = "onSelectFile2($event)"  >
+    <div class="btn">
+    <a (click)="upload()" class = "btna" ><b style="color: azure;">Upload Image(pdf)</b> </a>
+    <div class="file-name">no file chosen</div>
+      <br> 
+    
+  </div>
+  <div class = "btn">
+    <a (click)="upload2()" class = "btna" ><b style="color: azure;">Upload course(pdf)</b> </a>
+    <div class="file-name">no file chosen</div>
+  </div>
+</div>
+  </form>
+  <button type="button" (click)="add()" class="btn btn-success" style="margin-top: 50px;margin-bottom: 20px;">Submit</button>
+  <br>
+  
+  
+</div>
+</div>

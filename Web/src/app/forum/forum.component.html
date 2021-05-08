@@ -1,0 +1,36 @@
+
+<div class="my-3 p-3 bg-clear rounded shadow-sm">
+  <div class = "container-fluid">
+    <div class="row">
+    <h6 class="border-bottom pb-2 mb-0 col- 8" style="color: black;">Recent <b style="color : mediumslateblue">posts</b></h6>
+    <button routerLink = "/New" type="button" class="btn btn-secondary pull-right" style="background-color:mediumslateblue;margin-top: 3px;">New Post</button>
+  </div>
+  </div>
+
+   
+    
+  
+    <div *ngFor="let rep of questions" class="d-flex text-muted pt-3 RB" (click) = "redirectTo(rep.id)" > 
+      <img class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" src = "{{rep.img}}">
+    
+   
+
+      <p class="pb-3 mb-0 small lh-sm border-bottom">
+        <strong class="d-block text-info">@<b>{{rep.nom}}</b>  <b> {{rep.prenom}}</b></strong>
+        <b style="color:white">{{rep.title}} </b>
+        <br>
+        
+        {{rep.desc}}
+      </p>
+      
+    </div>
+
+    
+
+    <small class="d-block text-end mt-3">
+      <a href="#" style ="display: none;">All updates</a>
+    </small>
+    
+  </div>
+
+  

@@ -1,0 +1,22 @@
+
+<div *ngFor = "let cat of catlist">
+    <h1 style="color:rgb(255, 255, 255)">{{cat.nom_cat}}</h1>
+    <div class="RB" >
+        
+        
+          <div class="card " *ngFor="let rep of courses[cat.cat_id]">
+            <div (click) = "redirectTo(rep.course_id , rep.course_owner)" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
+
+            
+            <div class="card__title">{{rep.course_name}}</div>
+            <div class="progress-bar"></div>
+            <div class="circle"><img src = "{{rep.course_img}}" style = "height: 100%; width: 100%; border-radius: 50%;"></div>
+         
+            
+          </div>
+        
+      </div>
+</div>
+</div>

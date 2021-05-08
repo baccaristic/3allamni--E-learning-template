@@ -1,0 +1,32 @@
+async LoginClick(){
+    
+      var user  = (<HTMLInputElement>document.getElementById("user")).value;
+      var pwd =(<HTMLInputElement>document.getElementById("pwd")).value;
+      const response = await fetch("http://127.0.0.1:8000/login", {
+        method: 'POST',
+        body:`{"user":"${user}","pwd":"${pwd}"}`});
+        if(response.ok){
+            response.json().then(function(data){
+              if (JSON.stringify(data) !="[]"){
+                let datas=  JSON.parse(JSON.stringify(data));
+                localStorage.setItem("nom" , datas["0"].nom);
+                localStorage.setItem("prenom" , datas["0"].prenom);
+                localStorage.setItem("img",datas["0"].img_etu);
+                localStorage.setItem("genre" , datas["0"].genre);
+                localStorage.setItem("id" , datas["0"].id_etu);
+                localStorage.setItem("isLoggedin" , "true");
+                window.location.reload();
+              }
+              else{
+                var d = document.getElementById("wrong");
+                if(!d){document.getElementById("logform")!.insertAdjacentHTML('beforeend', '<b style="color: red;" id = "wrong">Email/password invalid</b>');}
+                
+              }
+              
+            });
+            
+          
+            
+
+  }
+}

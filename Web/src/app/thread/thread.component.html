@@ -1,0 +1,53 @@
+<nav aria-label="breadcrumb RB" class="main-breadcrumb" style="background-color: blueviolet;">
+  <ol class="breadcrumb" style="background-color: #1b1a1a">
+    <li class="breadcrumb-item"><a href="index.html">Forum</a></li>
+    <li class="breadcrumb-item"><a href="javascript:void(0)">thread</a></li>
+    <li class="breadcrumb-item active" aria-current="page">{{question.title}}</li>
+  </ol>
+</nav>
+<div class="awsm" (click) = "goTo(question.id_user)">
+    <div class="card RB">
+      <img src="{{question.img}}" alt="Person" class="card__image">
+      <p class="card__name">{{question.nom}} {{question.prenom}}</p>
+      <b style="color:rgb(255, 0, 0)">Question</b>
+    </div>
+  
+      <div class ="post">
+        <p>{{question.cont}}</p>
+      </div>
+  
+  
+  </div>
+
+<div *ngFor = "let rep of reponses">
+   
+    <div class="awsm" (click) = "goTo(rep.id_rep)">
+        <div class="card RB">
+          <img src="{{rep.img}}" alt="Person" class="card__image">
+          <p class="card__name">{{rep.nom}} {{rep.prenom}}</p>
+          <b style="color:green">Answer</b>
+        </div>
+      
+          <div class ="post">
+            <p>{{rep.cont_rep}}</p>
+          </div>
+      
+      
+      </div>
+           
+</div>
+<div class="cmnt">
+    <img class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" src = '{{img}}'>
+      <b>Add a comment:</b>
+     
+
+    <p class="pb-3 mb-0 big lh-sm border-bottom">
+        <div >
+            <textarea id = "cnt"></textarea>
+        </div>
+        
+        
+   
+  </div>
+  <button class="fill" (click) = "Post()">Post</button>
+

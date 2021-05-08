@@ -1,0 +1,35 @@
+<div class="container">
+	<div class="row">
+			<h1><b>Submit</b> <b style="color:mediumslateblue"> N</b>e<b style="color:mediumslateblue">w</b> <b style="color:mediumslateblue"> Post</b></h1>
+	</div>
+	<div class="row">
+			<h4 style="text-align:center">Please read the forum rules before posting!</h4>
+	</div>
+	<form>
+	<div class="row input-container">
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<input type="text" required name = "title" id = "title" />
+					<label>Ttile *</label> 
+				</div>
+			</div>
+			<div >
+				<div class="styled-input" style="width: 100%;">
+					<input type="text" name = "desc"id = "desc"  />
+					<label>Description</label> 
+				</div>
+			</div>
+			
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<textarea required name="cnt" id = "cnt" ></textarea>
+					<label>Content *</label>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				
+			</div>
+			<button routerLink = "/forum" (click)="Post()" class = "btn-lrg submit-btn" style="background-color: mediumslateblue;">Post</button>
+	</div>
+</form>
+</div>

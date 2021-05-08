@@ -1,0 +1,39 @@
+<div class = "Info-cont">
+
+</div>
+<h1 style="color: mediumslateblue;"><b style="color: black;">Teach</b> with us Form</h1>
+<form action="">
+<div class="field">
+  <input type="text" name="Fname" id="Fname" placeholder="First Name" [formControl]="Fname">
+  <label for="Fname">First Name</label>
+
+</div>
+<div class="field">
+  <input type="text" name="Lname" id="Lname" placeholder="Last Name" [formControl]="Lname">
+  <label for="fullname">Last Name</label>
+</div>
+<div class="field">
+  <input type="email" name="email" id="email" placeholder="jane.appleseed@example.com" [formControl]="Email">
+  <label for="email">Email</label>
+</div>
+
+<div class="field">
+  <input type="text" name="num" id="num" placeholder="+216 55002266" [formControl]="Num">
+  <label for="number">Phone Number</label>
+</div>
+
+<div class="field">
+  <input type="link" name="LILink" id="LILink" placeholder="https://www.linkedin.com/in/example-name-token/" [formControl]="Link">
+  <label for="LILink">LinkedIn Profile Link</label>
+</div>
+<div class="field">
+  <label for="CV">upload your CV</label>
+  <input type="file" class="form-control-file" id="CV">
+</div>
+
+<button type="button" class="btn btn-primary btn-lg float-end"> 
+  Submit
+</button>
+
+</form>
+

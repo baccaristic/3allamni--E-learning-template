@@ -1,0 +1,13 @@
+<div class="wrapper" data-aos="fade-up"
+data-aos-anchor-placement="top-bottom">
+<div class="card" *ngFor = "let course of courses" >
+    <img src="{{course.img}}"/>
+  <div class="info">
+    <h1>{{course.nom}}</h1>
+    <p>{{course.desc}}</p>
+    <button (click) = "goTo(course.id , course.teacher)">Read More</button>
+    <br>
+    <i class="fas fa-eye" style="color:rgb(255, 255, 255)"> <b style="color:rgb(255, 255, 255)"> {{course.views}}</b></i>
+  </div>
+</div>
+</div>
