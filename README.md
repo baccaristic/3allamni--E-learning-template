@@ -6,6 +6,14 @@ your local machine for development and testing purposes. See deployment
 for notes on deploying the project on a live system.
 ### Prerequisites
 Requirements for the software and other tools to build, test and push 
-- [Angular](https://angular.io/)
+- [![Angular](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvDdnYY_s2WR_D0jYWwESo2AL9oOHgeFxUtIARamqFFn6qgHUSVdHPdP9ECz-TwhhKZ8Y&usqp=CAU)][1]
 - [XAMPP](https://www.apachefriends.org/fr/index.html)
 - [Python 3.7](https://www.python.org/downloads/release/python-370/)
+
+
+
+
+
+
+
+[1]: https://angular.io/
