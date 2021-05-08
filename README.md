@@ -41,7 +41,15 @@ Now We will Import our database to the mysql server:
 ***Note : If There was an Import Error then make sure to execute each sql statement line by line on your database sql command***
 
 
+Secondly  , We will start our FAST API Script before doing so Make sure to install the following Python Modules:
+- Fast API
+          pip install FASTAPI
+          
+-uvicorn
+          pip install uvicorn[standard]
 
+-mysql-connector-python
+          pip install mysql-connector-python
 
 
 
