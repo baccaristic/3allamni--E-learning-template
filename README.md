@@ -46,11 +46,11 @@ Secondly  , We will start our FAST API Script before doing so Make sure to insta
           
           pip install FASTAPI
           
--uvicorn:
+- uvicorn:
          
          pip install uvicorn[standard]
 
--mysql-connector-python:
+- mysql-connector-python:
           
           pip install mysql-connector-python
 
