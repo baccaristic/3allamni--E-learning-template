@@ -20,8 +20,11 @@ Requirements for the software and other tools to build, test and push
 A step by step series of examples that tell you how to get a development
 environment running
 First  , After Installing XAMPP  , Open it and Start both of :
+
   -Apache
+  
   -MySQL
+  
   ![image](https://user-images.githubusercontent.com/78027050/117541826-071c5b00-b016-11eb-837c-2d97af2d4ba5.png)
 
 
