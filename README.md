@@ -9,7 +9,7 @@ Requirements for the software and other tools to build, test and push
 
 
 
--[![Angular]https://cdn.iconscout.com/icon/free/png-128/angular-2752246-2285063.png)][1]
+-[![Angular](https://cdn.iconscout.com/icon/free/png-128/angular-2752246-2285063.png)][1]
 - [XAMPP](https://www.apachefriends.org/fr/index.html)
 - [Python 3.7](https://www.python.org/downloads/release/python-370/)
 
