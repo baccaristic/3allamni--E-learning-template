@@ -53,6 +53,20 @@ Secondly  , We will start our FAST API Script before doing so Make sure to insta
 - mysql-connector-python:
           
           pip install mysql-connector-python
+          
+After doing so , Go to ./FASTAPI/ and click on file path and type : **cmd** and press **Enter**:
+
+![image](https://user-images.githubusercontent.com/78027050/117542154-c58caf80-b017-11eb-9ee1-df920b593525.png)
+
+a new command line will pop-up  , Type the following command:
+          
+          uvicorn main:app --reload
+          
+ ![image](https://user-images.githubusercontent.com/78027050/117542214-008ee300-b018-11eb-848f-5597e170b0df.png)
+
+
+
+
 
 
 
