@@ -80,7 +80,12 @@ First  , we need to Install the node modules for our project:
           
 Now the project is fully localy-hosted on your computer running on port 4200
 
+## Authors:
+This Project is made by :
 
+   - Mohamed Taoufik Baccar - **Computer science Student** | [Github](https://github.com/baccaristic)
+   - Hamza el aabed - **Computer science Student** | [Github](https://github.com/hamzahub-bot)
+   - Mohamed Mehdi Chihaoui - **Computer science Student** | [Github](https://github.com/MahdiCh-DEVWEB)
 
           
           
