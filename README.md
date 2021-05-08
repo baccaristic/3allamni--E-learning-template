@@ -9,7 +9,7 @@ Requirements for the software and other tools to build, test and push
 
 
 
--[![Angular](https://cdn.iconscout.com/icon/free/png-32/angular-2752246-2285063.png)][1]
+-[![Angular](https://cdn.iconscout.com/icon/free/png-32/angular-2752246-2285063.png)][1] -Angular
 
 -[![XAMPP](https://cdn.icon-icons.com/icons2/1381/PNG/32/xampp_94513.png)][2]
 
