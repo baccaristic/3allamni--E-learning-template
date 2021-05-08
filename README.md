@@ -67,15 +67,23 @@ a new command line will pop-up  , Type the following command:
 
 Now we are done with the backend part finally we need to launch the angular project
 
-Make sure you installed web server for chrome extension:
+First  , we need to Install the node modules for our project:
 
-![image](https://user-images.githubusercontent.com/78027050/117542409-d7228700-b018-11eb-8166-8ea61831ca72.png)
+1. Open the command line on ./Web/
+3. Type the following Command:
+      
+        npm Install 
+      
+3. After installing all the modules just type the following command to serve the project:
+        
+          ng serve --o
+          
+Now the project is fully localy-hosted on your computer running on port 4200
 
-Choose ./web/
 
-![image](https://user-images.githubusercontent.com/78027050/117542469-0cc77000-b019-11eb-8c2a-11a6f41cb508.png)
 
-Then reload the server:
+          
+          
 
 
 
